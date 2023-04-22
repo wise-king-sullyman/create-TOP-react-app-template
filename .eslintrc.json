@@ -8,7 +8,6 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
   "overrides": [
@@ -35,33 +34,15 @@
       "version": "detect"
     }
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "import", "prettier", "promise"],
   "rules": {
-    "@typescript-eslint/adjacent-overload-signatures": "error",
-    "@typescript-eslint/array-type": "error",
-    "@typescript-eslint/consistent-type-assertions": "error",
-    "@typescript-eslint/consistent-type-definitions": "error",
-    "@typescript-eslint/no-misused-new": "error",
-    "@typescript-eslint/no-namespace": "error",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "argsIgnorePattern": "^_"
-      }
-    ],
-    "@typescript-eslint/prefer-for-of": "error",
-    "@typescript-eslint/prefer-function-type": "error",
-    "@typescript-eslint/prefer-namespace-keyword": "error",
-    "@typescript-eslint/unified-signatures": "error",
-    "@typescript-eslint/no-var-requires": "off",
-    "arrow-body-style": "error",
+    "arrow-body-style": ["error", "as-needed"],
     "camelcase": [
       "error",
       {
         "ignoreDestructuring": true
       }
     ],
-    "constructor-super": "error",
     "curly": "error",
     "dot-notation": "error",
     "eqeqeq": ["error", "smart"],
@@ -70,14 +51,8 @@
     "no-nested-ternary": "error",
     "no-bitwise": "error",
     "no-caller": "error",
-    "no-cond-assign": "error",
-    "no-console": "error",
-    "no-debugger": "error",
-    "no-empty": "error",
     "no-eval": "error",
     "no-new-wrappers": "error",
-    "no-undef-init": "error",
-    "no-unsafe-finally": "error",
     "no-unused-expressions": [
       "error",
       {
@@ -85,17 +60,13 @@
         "allowShortCircuit": true
       }
     ],
-    "no-unused-labels": "error",
     "no-var": "error",
     "object-shorthand": "error",
     "one-var": ["error", "never"],
     "prefer-const": "error",
-    "radix": ["error", "as-needed"],
     "react/prop-types": 0,
-    "react/display-name": 0,
     "react-hooks/exhaustive-deps": "warn",
     "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
-    "spaced-comment": "error",
-    "use-isnan": "error"
+    "spaced-comment": "error"
   }
 }

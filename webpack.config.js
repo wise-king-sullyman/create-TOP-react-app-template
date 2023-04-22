@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: path.join(__dirname, './'),
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
@@ -13,7 +13,8 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       title: 'Output Management',
-      template: path.join(__dirname, 'public', 'index.html'),
+      template: './public/index.html',
+      favicon: './public/favicon.ico',
       inject: true
     }),
 
@@ -21,7 +22,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         exclude: /node_modules/,
         use: 'babel-loader'
       },
@@ -39,10 +40,7 @@ module.exports = {
       },
     ]
   },
-  devServer: {
-    port: 8080,
-    hot: true,
-    static: {
-          }
-  },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  }
 };
