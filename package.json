@@ -1,8 +1,8 @@
 {
-  "name": "create-top-react-app",
+  "name": "create-top-react-app-template",
   "private": true,
   "version": "0.0.0",
-  "description": "This library provides patternfly extensions",
+  "description": "A template for The Odin Project React Projects",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve",
