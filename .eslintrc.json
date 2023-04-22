@@ -68,5 +68,6 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
     "spaced-comment": "error"
-  }
+  },
+  "ignorePatterns": ["dist"]
 }
