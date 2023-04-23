@@ -5,7 +5,8 @@ module.exports = {
     '^.+\\.[jt]sx?$': 'babel-jest'
   },
   moduleNameMapper: {
-    '\\.(css|less|svg)$': '<rootDir>/styleMock.js'
+    '\\.(css|less)$': '<rootDir>/styleMock.js',
+    '\\.(svg|png|jpg|jpeg|tif|tiff|gif|bmp|eps|raw)$': '<rootDir>/styleMock.js'
   },
   testEnvironment: 'jsdom'
 };
